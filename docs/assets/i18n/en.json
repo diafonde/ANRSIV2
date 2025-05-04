@@ -1,0 +1,61 @@
+{
+  "header": {
+    "search": "Search",
+    "searchPlaceholder": "Search news, articles...",
+    "nav": {
+      "home": "Home",
+      "news": "News",
+      "latest": "Latest News",
+      "research": "Research",
+      "innovation": "Innovation",
+      "events": "Events",
+      "about": "About",
+      "mission": "Our Mission",
+      "team": "Our Team",
+      "partners": "Partners",
+      "careers": "Careers",
+      "contact": "Contact",
+      "media": "Media",
+      "photos": "Photos",
+      "videos": "Videos",
+      "gallery": "Gallery"
+    }
+  },
+  "footer": {
+    "contact": "Contact Us",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "copyright": "© 2024 ANRSI. All rights reserved."
+  },
+  "home": {
+    "featuredNews": "Featured News",
+    "categories": "Categories",
+    "latestUpdates": "Latest Updates",
+    "readMore": "Read More"
+  },
+  "media": {
+    "photos": {
+      "title": "Photo Gallery",
+      "categories": {
+        "all": "All",
+        "facilities": "Facilities",
+        "team": "Team",
+        "equipment": "Equipment",
+        "events": "Events"
+      }
+    },
+    "videos": {
+      "title": "Video Gallery",
+      "categories": {
+        "all": "All",
+        "research": "Research",
+        "team": "Team",
+        "facilities": "Facilities",
+        "events": "Events"
+      }
+    }
+  }
+} 
