@@ -87,7 +87,7 @@ export class HomeComponent implements OnInit {
       id: 1,
       title: 'Breakthrough in Quantum Computing Research',
       summary: 'Scientists achieve major milestone in quantum computing with new error correction method.',
-      imageUrl: '/assets/images/quantum-computing.jpg',
+      imageUrl: 'assets/images/quantum-computing.jpg',
       category: 'Research',
       date: new Date('2024-03-15')
     },
@@ -95,7 +95,7 @@ export class HomeComponent implements OnInit {
       id: 2,
       title: 'New Renewable Energy Initiative Launched',
       summary: 'Government announces major funding for renewable energy research and development.',
-      imageUrl: '/assets/images/renewable-energy.jpg',
+      imageUrl: 'assets/images/renewable-energy.jpg',
       category: 'Innovation',
       date: new Date('2024-03-14')
     },
@@ -103,7 +103,7 @@ export class HomeComponent implements OnInit {
       id: 3,
       title: 'International Science Conference Announced',
       summary: 'Leading scientists to gather for annual conference on climate change solutions.',
-      imageUrl: '/assets/images/conference.jpg',
+      imageUrl: 'assets/images/conference.jpg',
       category: 'Events',
       date: new Date('2024-03-13')
     }

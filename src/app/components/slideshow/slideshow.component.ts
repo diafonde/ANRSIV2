@@ -207,21 +207,21 @@ export class SlideshowComponent implements OnInit, OnDestroy {
       id: 1,
       title: 'Advancing Scientific Research',
       description: 'Discover the latest breakthroughs in scientific research and innovation',
-      imageUrl: '/assets/images/slideshow/research.jpg',
+      imageUrl: 'assets/images/slideshow/research.jpg',
       link: '/news'
     },
     {
       id: 2,
       title: 'Innovation Hub',
       description: 'Explore our state-of-the-art facilities and research centers',
-      imageUrl: '/assets/images/slideshow/innovation.jpg',
+      imageUrl: 'assets/images/slideshow/innovation.jpg',
       link: '/about'
     },
     {
       id: 3,
       title: 'Research Grants',
       description: 'Learn about funding opportunities for your research projects',
-      imageUrl: '/assets/images/slideshow/grants.jpg',
+      imageUrl: 'assets/images/slideshow/grants.jpg',
       link: '/news?category=grants'
     }
   ];
