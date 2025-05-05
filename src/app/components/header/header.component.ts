@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { faHome, faNewspaper, faClock, faFlask, faLightbulb, faCalendarAlt, faInfoCircle, faBullseye, faUsers, faHandshake, faBriefcase, faPhotoVideo, faVideo, faCamera, faImages, faEnvelope, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faNewspaper, faClock, faFlask, faLightbulb, faCalendarAlt, faInfoCircle, faBullseye, faUsers, faHandshake, faBriefcase, faPhotoVideo, faVideo, faCamera, faImages, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -37,20 +37,9 @@ import { faFacebook, faTwitter, faLinkedin, faInstagram } from '@fortawesome/fre
           </div>
 
           <div class="language-switcher">
-            <button (click)="toggleLanguageMenu()" class="lang-btn">
+            <button (click)="toggleLanguage()" class="lang-btn">
               {{ getCurrentLangLabel() }}
-              <fa-icon [icon]="faChevronDown"></fa-icon>
             </button>
-            <div class="language-dropdown" [class.show]="showLanguageMenu">
-              <button (click)="switchLanguage('fr')" [class.active]="currentLang === 'fr'">
-                <span class="lang-code">FR</span>
-                <span class="lang-name">Français</span>
-              </button>
-              <button (click)="switchLanguage('ar')" [class.active]="currentLang === 'ar'">
-                <span class="lang-code">عربي</span>
-                <span class="lang-name">العربية</span>
-              </button>
-            </div>
           </div>
         </div>
       </div>
@@ -107,7 +96,6 @@ export class HeaderComponent {
   searchQuery: string = '';
   @Output() languageChange = new EventEmitter<string>();
   currentLang: string = 'fr';
-  showLanguageMenu: boolean = false;
 
   // Font Awesome icons
   faHome = faHome;
@@ -126,7 +114,6 @@ export class HeaderComponent {
   faCamera = faCamera;
   faImages = faImages;
   faEnvelope = faEnvelope;
-  faChevronDown = faChevronDown;
 
   constructor(private translate: TranslateService) {
     this.currentLang = translate.currentLang;
@@ -137,24 +124,12 @@ export class HeaderComponent {
     console.log('Search query:', this.searchQuery);
   }
 
-  toggleLanguageMenu() {
-    this.showLanguageMenu = !this.showLanguageMenu;
-  }
-
-  switchLanguage(lang: string) {
-    this.currentLang = lang;
-    this.languageChange.emit(lang);
-    this.showLanguageMenu = false;
+  toggleLanguage() {
+    this.currentLang = this.currentLang === 'fr' ? 'ar' : 'fr';
+    this.languageChange.emit(this.currentLang);
   }
 
   getCurrentLangLabel(): string {
-    switch (this.currentLang) {
-      case 'fr':
-        return 'FR';
-      case 'ar':
-        return 'عربي';
-      default:
-        return 'FR';
-    }
+    return this.currentLang === 'fr' ? 'FR' : 'عربي';
   }
 } 
